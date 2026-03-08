@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ["Space Grotesk", "sans-serif"],
+        mono: ["JetBrains Mono", "monospace"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +51,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        neon: {
+          pink: "hsl(var(--neon-pink))",
+          cyan: "hsl(var(--neon-cyan))",
+          purple: "hsl(var(--neon-purple))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -65,25 +74,38 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "pulse-glow": {
+          "0%": { boxShadow: "0 0 5px hsl(var(--neon-pink)), 0 0 10px hsl(var(--neon-pink) / 0.5)" },
+          "100%": { boxShadow: "0 0 20px hsl(var(--neon-pink)), 0 0 40px hsl(var(--neon-pink) / 0.3)" },
+        },
+        "pulse-glow-cyan": {
+          "0%": { boxShadow: "0 0 5px hsl(var(--neon-cyan)), 0 0 10px hsl(var(--neon-cyan) / 0.5)" },
+          "100%": { boxShadow: "0 0 20px hsl(var(--neon-cyan)), 0 0 40px hsl(var(--neon-cyan) / 0.3)" },
+        },
+        "score-fill": {
+          "0%": { width: "0%" },
+          "100%": { width: "var(--score-width)" },
+        },
+        "flicker": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.8" },
+          "25%, 75%": { opacity: "0.9" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite alternate",
+        "pulse-glow-cyan": "pulse-glow-cyan 2s ease-in-out infinite alternate",
+        "score-fill": "score-fill 1.5s ease-out forwards",
+        "flicker": "flicker 3s ease-in-out infinite",
       },
     },
   },
