@@ -1,73 +1,54 @@
-# Welcome to your Lovable project
+# 🔥 Portfolio Burn
 
-## Project info
+Get roasted by a cynical hedge fund AI. Enter your top holdings and see if your portfolio is "Financial Arson" or "Surprisingly Fireproof."
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+![Portfolio Burn Preview](https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=1000)
 
-## How can I edit this code?
+## 🚀 Quick Start
 
-There are several ways of editing your application.
+### 1. Clone the repo
+```bash
+git clone https://github.com/amanhammadK/burn-my-portfolio.git
+cd burn-my-portfolio
+```
 
-**Use Lovable**
+### 2. Setup Environment Variables
+Copy the example env file and add your Supabase credentials:
+```bash
+cp .env.example .env
+```
+*Note: You'll need a Supabase project for the backend integration.*
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### 3. Install Dependencies
+```bash
+npm install
+# or
+bun install
+```
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 4. Run Development Server
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🛠️ Tech Stack
+- **Frontend**: React + Vite + TypeScript
+- **Styling**: Tailwind CSS + Framer Motion (for those crisp animations)
+- **UI Components**: shadcn/ui
+- **Icons**: Lucide React
+- **Backend**: Supabase (Database & Auth)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📁 Repository Structure
+- `src/components`: Reusable UI components.
+- `src/pages`: Main application views.
+- `src/lib`: Shared utility functions and configurations.
+- `src/integrations`: Supabase and other third-party integrations.
 
-**Use GitHub Codespaces**
+## 🤝 Contributing
+Contributions are welcome! If you have ideas for better roast lines or new features, feel free to open a PR.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📜 License
+MIT License - feel free to use this for your own projects!
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+*Disclaimer: This is for entertainment purposes only. Not financial advice. Your portfolio is your problem.*
